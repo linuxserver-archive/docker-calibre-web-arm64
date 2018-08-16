@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python.arm64:3.7
+FROM lsiobase/alpine.python.arm64:3.8
 
 # set version label
 ARG BUILD_DATE
@@ -95,9 +95,9 @@ RUN \
  rm -rf \
 	/tmp/*
 
-# add local files
+# add local files
 COPY root/ /
 
-# ports and volumes
+# ports and volumes
 EXPOSE 8083
 VOLUME /books /config
